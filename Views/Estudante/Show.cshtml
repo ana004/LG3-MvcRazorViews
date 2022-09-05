@@ -4,3 +4,19 @@
 }
 
 <h1>Estudante: @Model.Nome</h1>
+
+@if(Model.Ativo) 
+{
+    <a href="#">Iniciar Conversa</a>
+    <a href="#">Editar</a>
+    <a href="#">Desativar</a>
+} else 
+{
+    <a href="#">Ativar</a>
+}
+
+<hr>
+
+<p><b>id:</b> @Model.Id</p>
+<p><b>Nome:</b> @Model.Nome</p>
+<p><b>Endereço: </b>@Model.Endereco</p>
